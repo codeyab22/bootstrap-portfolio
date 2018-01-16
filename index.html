@@ -4,40 +4,52 @@
 	
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>About | Rhonda Glennon</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
-<header id="masthead">
-   <div class="container">
-      <a href="index.html" id="logo">Rhonda Glennon</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-</header>
+<nav class="navbar" id="masthead">
+	<div class="container">
+  	<div class="navbar-header">
+    	<a class="navbar-brand" href="index.html" id="logo">Rhonda Glennon</a>
+  	</div>
+<!--     <div class="collapse navbar-collapse"> -->
+      <ul class="nav navbar-nav navbar-right" id="navbar-links">
+        <li><a href="index.html" id="no-border-about">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    	</ul>
+<!-- 		</div> -->
+  </div>
+</nav>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
+  <div class="container">
+<!--     <section class="main-section"> -->
+
+	<div class="row">
+		<div class="col-md-8 main-section">
      	<h1>About Me</h1>
 
-      <img src="assets/images/rhonda.jpeg" class="auth-image" alt="Rhonda Glennon profile photo">
+<div class="row">
+		      <img class="pull-left image-responsive" id="profile-photo" src="assets/images/rhonda.jpeg" alt="Rhonda Glennon profile photo">
 
       <p>Rhonda is currently a student at UC Berkeley Extension's immersive coding bootcamp, after working in the software industry for the past 15 years. She was a developer relations manager at a mapping software company in San Francisco for nearly three years, and prior to that, was in southern California as a product manager and technical documentation lead for another mapping company.</p>
 
       <p>Rhonda has a pilot's license, as well as an instrument ground instructor certificate, and enjoys sightseeing, taking aerial photographs, and writing trip reports. Though coding bootcamp has her quite busy, she likes to find time for cooking, working out, and playing with her lynx point Siamese cat named Bailey.</p>
 
 			<p>She holds a Master of Science in geoscience from Western Kentucky University and a bachelorʼs degree in political science. </p>
+</div>
+</div>
 
-    </section>
+<!-- 	</section> -->
 
-		<section class="sidebar">
-			<div id="connect">
+		<div class="col-md-3 col-md-offset-1 sidebar">
+<!-- 			<div id="connect"> -->
+
 			<h2>Connect with Me</h2>
 
 			<a href="https://github.com/rmglennon"><img class="social" src="assets/images/github.png" alt="GitHub">
@@ -46,8 +58,10 @@
 			</a>
 			<a href="https://stackexchange.com/users/512843/rhonda"><img class="social" src="assets/images/stackoverflow.png" alt="StackExchange">
 			</a>
-		</div>
-	</section>
+<!-- 		</div> -->
+	</div>
+
+</div>
 </div>
 
 	<footer>
